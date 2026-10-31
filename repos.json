@@ -1,0 +1,57 @@
+[
+ {
+  "name": "your-friend",
+  "url": "https://github.com/suvojit20070/your-friend",
+  "lang": "Java",
+  "lic": "Apache-2.0",
+  "desc": "",
+  "stars": 1,
+  "forks": 0,
+  "updated": "2026-10-31",
+  "topics": []
+ },
+ {
+  "name": "FreeDeepsek",
+  "url": "https://github.com/suvojit20070/FreeDeepsek",
+  "lang": "Java",
+  "lic": "",
+  "desc": "",
+  "stars": 0,
+  "forks": 0,
+  "updated": "2026-10-31",
+  "topics": []
+ },
+ {
+  "name": "InstallSentry",
+  "url": "https://github.com/suvojit20070/InstallSentry",
+  "lang": "Kotlin",
+  "lic": "MIT",
+  "desc": "",
+  "stars": 0,
+  "forks": 0,
+  "updated": "2026-10-28",
+  "topics": []
+ },
+ {
+  "name": "bot-src",
+  "url": "https://github.com/suvojit20070/bot-src",
+  "lang": "JavaScript",
+  "lic": "",
+  "desc": "",
+  "stars": 0,
+  "forks": 0,
+  "updated": "2026-10-26",
+  "topics": []
+ },
+ {
+  "name": "LocalLLM",
+  "url": "https://github.com/suvojit20070/LocalLLM",
+  "lang": "Java",
+  "lic": "",
+  "desc": "",
+  "stars": 0,
+  "forks": 0,
+  "updated": "2026-10-22",
+  "topics": []
+ }
+]

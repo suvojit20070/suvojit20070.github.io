@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suvo — Android & AI Developer</title>
+<meta name="description" content="Suvo — Android developer building AI agents, on-device LLMs and local OpenAI-compatible APIs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<header class="nav">
+  <a href="#top" class="logo">suvo<span>.dev</span></a>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="pill">● Available for collaboration</p>
+    <h1>Hi, I'm <span class="grad">Suvo</span>.<br>I build AI that lives<br>on your phone.</h1>
+    <p class="lede">Android developer working on personal AI agents, on-device LLMs and local OpenAI-compatible APIs — in Java, Kotlin and a bit of native C++.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See my work</a>
+      <a class="btn ghost" href="https://github.com/suvojit20070" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="stats">
+      <div><strong>6</strong><span>public repos</span></div>
+      <div><strong>129</strong><span>commits on flagship</span></div>
+      <div><strong>36</strong><span>built-in agent tools</span></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title"><span class="num">01</span> Projects</h2>
+
+    <article class="card featured">
+      <div class="card-head">
+        <h3>your-friend <span class="tag">flagship</span></h3>
+        <span class="lang java">Java</span>
+      </div>
+      <p class="desc">A full Android personal AI agent. Bring your own model provider — it talks to any OpenAI-compatible API with streaming, tool calls and retries.</p>
+      <ul class="feat">
+        <li>Agent loop with approval policy, audit log and context compaction</li>
+        <li>Persistent memory on SQLite + FTS</li>
+        <li>Screen control via Accessibility, Shizuku shell, Termux, camera & voice</li>
+        <li>325 classes compiled, 116 unit tests, CI with signed releases</li>
+      </ul>
+      <div class="card-foot">
+        <a href="https://github.com/suvojit20070/your-friend" target="_blank" rel="noopener">View repo ↗</a>
+        <span class="meta">★ 1 · Apache-2.0 · 129 commits</span>
+      </div>
+    </article>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card-head"><h3>LocalLLM</h3><span class="lang java">Java</span></div>
+        <p class="desc">Runs a GGUF model (Gemma and friends) on the phone through llama.cpp and exposes a local OpenAI-compatible endpoint at 127.0.0.1:8080/v1.</p>
+        <ul class="feat">
+          <li>llama.cpp JNI build via NDK + CMake</li>
+          <li>Performance presets, speed test, KV-cache, flash attention</li>
+          <li>Self-learning memory injected into the system prompt</li>
+        </ul>
+        <div class="card-foot"><a href="https://github.com/suvojit20070/LocalLLM" target="_blank" rel="noopener">View repo ↗</a><span class="meta">37 commits</span></div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>FreeDeepsek</h3><span class="lang java">Java</span></div>
+        <p class="desc">Turns a logged-in DeepSeek web session into a local OpenAI-compatible API on the phone.</p>
+        <ul class="feat">
+          <li>WebView automation with fetch/XHR stream cloning and a JS bridge</li>
+          <li>Local server: /v1/models, /v1/chat/completions (streaming)</li>
+          <li>Foreground service with overlay-parked WebView</li>
+        </ul>
+        <div class="card-foot"><a href="https://github.com/suvojit20070/FreeDeepsek" target="_blank" rel="noopener">View repo ↗</a><span class="meta">11 commits</span></div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>InstallSentry</h3><span class="lang kotlin">Kotlin</span></div>
+        <p class="desc">Offline-first Android app installation monitor built with Kotlin and Jetpack Compose.</p>
+        <ul class="feat">
+          <li>Installer source, timestamps, SDK target, permissions, signing-cert SHA-256</li>
+          <li>Notifications on PACKAGE_ADDED broadcasts</li>
+          <li>No INTERNET permission, no analytics, no root — MIT licensed</li>
+        </ul>
+        <div class="card-foot"><a href="https://github.com/suvojit20070/InstallSentry" target="_blank" rel="noopener">View repo ↗</a><span class="meta">MIT · 6 commits</span></div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>bot-src &amp; BotRes</h3><span class="lang js">JS</span></div>
+        <p class="desc">Scratch space and asset dumps — config files, knowledge bases, ad-blocker scripts and web resources.</p>
+        <ul class="feat">
+          <li>tbh-ads-blocker scripts (v2.1 / v2.2)</li>
+          <li>Knowledge base and example files</li>
+        </ul>
+        <div class="card-foot"><a href="https://github.com/suvojit20070?tab=repositories" target="_blank" rel="noopener">All repos ↗</a><span class="meta">56 + 27 commits</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title"><span class="num">02</span> About</h2>
+    <div class="about">
+      <p>I'm Suvo — an Android developer who likes taking AI out of the cloud and putting it right on the device. Most of my work sits at the intersection of three things: <strong>agentic apps</strong>, <strong>local inference</strong> and <strong>deep system integration</strong> on Android.</p>
+      <p>I build with Java and Kotlin, write native code when I have to, and care about the boring parts: permissions, approval policies, offline-first design and reproducible builds.</p>
+      <div class="skills">
+        <span>Java</span><span>Kotlin</span><span>Jetpack Compose</span><span>Android SDK</span>
+        <span>NDK / C++</span><span>llama.cpp</span><span>OpenAI API</span><span>SQLite</span>
+        <span>Shizuku</span><span>Termux</span><span>GitHub Actions</span><span>WebView</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title"><span class="num">03</span> Contact</h2>
+    <div class="contact">
+      <p>Got something you want to build on Android? Let's talk.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://t.me/inmsuvo" target="_blank" rel="noopener">Telegram ↗</a>
+        <a class="btn ghost" href="https://github.com/suvojit20070" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Suvo · built with plain HTML, CSS &amp; JS</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
